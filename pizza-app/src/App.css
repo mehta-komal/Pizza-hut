@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Helvetica, sans-serif;
+  
+}
+.app{
+  background-color: rgb(198, 196, 196);
+}
+.image{
+  width: 100px;
+  height: 50px;
+ 
+}
+.header{
+  background-color: rgb(29, 29, 45);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text{
+  font-size: 15px;
+  
+  color: white;
+  font-weight: 500;
+}
+
+
+.headerRight{
+  margin-right: 10px;
+}
+.body{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+ 
+}
+
+.pizzaItems{
+
+ margin: 20px;
+
+}
+
+.pizzaItemsOuterContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+background-color: white;
+  align-items: center;
+
+}
+.pizzaperitems{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.pizzaItemcontainer{
+  display: flex;
+ flex-direction: column;
+  gap: 10px;
+  padding: 8px;  
+  width: 150px;
+  height: 150px;
+}
+.pizzaitemText{
+  font-size: 16px;
+  color: rgb(89, 89, 89);
+}
+
+.pizzaitemButton{
+  height: 50px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: rgb(28, 67, 28);
+}
