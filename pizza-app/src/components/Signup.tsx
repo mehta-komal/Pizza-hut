@@ -13,11 +13,11 @@ import {
 export default function Signup() {
     const navigate = useNavigate();
   const [config, setConfig] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
+    address: '',
     email: '',
-    profession: '',
     password: '',
-    confirmpassword: '',
   });
 
 
@@ -57,7 +57,7 @@ export default function Signup() {
                     required
                     id='outlined-basic'
                     onChange={(e) =>
-                      setConfig((pv) => ({ ...pv, name: e.target.value }))
+                      setConfig((pv) => ({ ...pv, firstName: e.target.value }))
                     }
                     label='Name'
                     autoComplete='off'
@@ -77,7 +77,7 @@ export default function Signup() {
                     required
                     id='outlined-basic'
                     onChange={(e) =>
-                      setConfig((pv) => ({ ...pv, email: e.target.value }))
+                      setConfig((pv) => ({ ...pv, lastName: e.target.value }))
                     }
                     label='Email'
                     type='email'
@@ -100,7 +100,7 @@ export default function Signup() {
                     onChange={(e) =>
                       setConfig((pv) => ({
                         ...pv,
-                        profession: e.target.value,
+                        address: e.target.value,
                       }))
                     }
                     label='Profession'
@@ -129,31 +129,7 @@ export default function Signup() {
                   />
                 </Box>
               </div>
-              <div className='form-group'>
-                <Box
-                  component='form'
-                  sx={{
-                    '& .MuiTextField-root': { m: 1, width: '43ch' },
-                  }}
-                  noValidate
-                  autoComplete='off'
-                >
-                  <TextField
-                    required
-                    id='outlined-basic'
-                    type='password'
-                    onChange={(e) =>
-                      setConfig((pv) => ({
-                        ...pv,
-                        confirmpassword: e.target.value,
-                      }))
-                    }
-                    label='Confirm Password'
-                    autoComplete='off'
-                    variant='outlined'
-                  />
-                </Box>
-              </div>
+              
               <div>
                 <Button
                   variant='contained'
