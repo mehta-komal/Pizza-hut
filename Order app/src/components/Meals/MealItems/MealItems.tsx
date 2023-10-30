@@ -21,4 +21,4 @@ const MealItems:React.FC<MealItemsProps>= (props) => {
   )
 }
 
-export default MealItems
+export default MealItems;
